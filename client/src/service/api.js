@@ -1,7 +1,7 @@
 import axios from "axios";  // Axios is used to fetch data--as from an api
 // const URL = "http://localhost:8000"; //url of backend
-const URL = process.env.BACKEND_URL;
-// const URL = ''; //url of backend for production kept empty automatically gets filled
+// const URL = process.env.BACKEND_URL;
+const URL = 'https://sp-flipkart-clone-ecommerce-backend-l2mz.onrender.com'; //url of backend for production kept empty automatically gets filled
 export const authenticateSignup = async function(data){ //async-await instead of promises
     try {                        
        return await axios.post(`${URL}/signUp`,data)    //post as data is comming from signUp form (userData) as post method

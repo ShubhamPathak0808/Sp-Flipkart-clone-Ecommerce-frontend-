@@ -1,8 +1,8 @@
 import axios from "axios"
 import * as actionType from "../constants/cartConstants.js"
 // const URL = "http://localhost:8000"; //url of backend
-// const URL = ''; //url of backend for production kept empty automatically gets fill
-const URL = process.env.BACKEND_URL;
+const URL = 'https://sp-flipkart-clone-ecommerce-backend-l2mz.onrender.com'; //url of backend for production kept empty automatically gets fill
+// const URL = process.env.BACKEND_URL;
 
 export const addToCart = (id, quantity) => async (dispatch) => {
     try {

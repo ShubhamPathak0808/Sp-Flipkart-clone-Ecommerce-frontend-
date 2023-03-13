@@ -1,8 +1,8 @@
 import axios from "axios";  // Axios is used to fetch data--as from an api
 import *as actionTypes from "../constants/productConstants"
 // const URL = "http://localhost:8000"; //url of backend
-// const URL = ''; //url of backend for production kept empty automatically gets fill
-const URL = process.env.BACKEND_URL;
+const URL = 'https://sp-flipkart-clone-ecommerce-backend-l2mz.onrender.com'; //url of backend for production kept empty automatically gets fill
+// const URL = process.env.BACKEND_URL;
 
 export const getProducts = ()=>  async (dispatch) => {       // this is a middleware
         try {
